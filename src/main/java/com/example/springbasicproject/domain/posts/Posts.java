@@ -13,7 +13,7 @@ import javax.persistence.*;
 public class Posts {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // auto_increment
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(length = 500, nullable = false)
@@ -24,8 +24,8 @@ public class Posts {
 
     private String author;
 
-    @Builder // 생성 시점에 값을 채워 주는 역할 == 생성자가 해줄 수 도 있음
-    private Posts(String title, String content, String author) {
+    @Builder
+    public Posts(String title, String content, String author) {
         this.title = title;
         this.content = content;
         this.author = author;
