@@ -1,7 +1,9 @@
 package com.example.springbasicproject.web.dto;
 
 import com.example.springbasicproject.domain.posts.Posts;
+import lombok.Getter;
 
+@Getter
 public class PostsResponseDto {
     private Long id;
     private String title;
