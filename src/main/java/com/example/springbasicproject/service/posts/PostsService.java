@@ -35,10 +35,15 @@ public class PostsService {
         return new PostsResponseDto(entity);
     }
 
-    @Transactional(readOnly = true)
+    @Transactional(readOnly = true) // 전체조회
     public List<PostsListResponseDto> findAllDesc() {
         return postsRepository.findAllDesc().stream()
                 .map(PostsListResponseDto::new) // .map(posts -> new PostsListResponseDto(posts))
                 .collect(Collectors.toList());
+    }
+    @Transactional
+    public void delete(Long id) {
+        Posts posts = postsRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 게시글이 존재하지 않아요. id=" + id));
+        postsRepository.delete(posts);
     }
 }

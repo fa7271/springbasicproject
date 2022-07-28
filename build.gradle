@@ -30,6 +30,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	//h2
 	runtimeOnly 'com.h2database:h2'
+	// 스프링 시큐리티
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+
 	//406 에러 해결 json 추가
 //	implementation "com.fasterxml.jackson.core
 
