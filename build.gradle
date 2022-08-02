@@ -27,13 +27,15 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	// JPA
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpsva'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	//h2
 	runtimeOnly 'com.h2database:h2'
 	// 스프링 시큐리티
 	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 	//spring jdbc
 	implementation 'org.springframework.session:spring-session-jdbc'
+	testImplementation 'org.springframework.security:spring-security-test'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
 
 	//406 에러 해결 json 추가
 //	implementation "com.fasterxml.jackson.core

@@ -1,8 +1,9 @@
-package com.example.springbasicproject.web.dto;
+package com.example.springbasicproject.web;
 
 import com.example.springbasicproject.config.auth.LoginUser;
 import com.example.springbasicproject.config.auth.dto.SessionUser;
 import com.example.springbasicproject.service.posts.PostsService;
+import com.example.springbasicproject.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
