@@ -13,7 +13,7 @@ import javax.persistence.*;
 public class User extends BaseTimeEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //자동 숫자 올라감
     private Long id;
 
     @Column(nullable = false) // not null
