@@ -26,7 +26,7 @@ public class PostsRepositoryTest {
         postsRepository.deleteAll();
     }
 
-    @org.junit.Test
+    @Test
     public void 게시글저장_불러오기() {
         //given
         String title = "테스트 게시글";
@@ -35,7 +35,7 @@ public class PostsRepositoryTest {
         postsRepository.save(Posts.builder()
                 .title(title)
                 .content(content)
-                .author("fa7271@naver.com")
+                .author("jojoldu@gmail.com")
                 .build());
 
         //when
